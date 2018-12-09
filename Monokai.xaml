@@ -1,0 +1,53 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Base.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+    <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
+    
+    <Style x:Key="QueryBoxStyle" BasedOn="{StaticResource BaseQueryBoxStyle}" TargetType="{x:Type TextBox}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#131619" Opacity="0.5"/>
+            </Setter.Value>
+        </Setter>  
+        <Setter Property="Foreground" Value="#FCFCFAFF" />
+    </Style>
+
+    <Style x:Key="WindowBorderStyle" BasedOn="{StaticResource BaseWindowBorderStyle}" TargetType="{x:Type Border}">
+        <Setter Property="Padding" Value="16 12 16 12"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="#2D2A2E" Opacity="0.95"/>
+            </Setter.Value>
+        </Setter>        
+        <Setter Property="CornerRadius" Value="12"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush">
+            <Setter.Value>
+                <SolidColorBrush Color="#FFFFFF" Opacity="0.15"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="WindowStyle" TargetType="{x:Type Window}" BasedOn="{StaticResource BaseWindowStyle}" >
+        <Setter Property="Background" Value="{x:Null}"/>
+    </Style>
+    <Style x:Key="PendingLineStyle" BasedOn="{StaticResource BasePendingLineStyle}" TargetType="{x:Type Line}" ></Style>
+    <Style x:Key="ItemTitleStyle" BasedOn="{StaticResource BaseItemTitleStyle}" TargetType="{x:Type TextBlock}" >
+        <Setter Property="Foreground" Value="#FF5F57"></Setter>
+    </Style>
+    <Style x:Key="ItemSubTitleStyle" BasedOn="{StaticResource BaseItemSubTitleStyle}" TargetType="{x:Type TextBlock}" >
+        <Setter Property="Foreground"  Value="#5ad0e8"></Setter>
+    </Style>
+    <Style x:Key="ItemTitleSelectedStyle" BasedOn="{StaticResource BaseItemTitleSelectedStyle}" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="#facb5f" />
+    </Style>
+    <Style x:Key="ItemSubTitleSelectedStyle" BasedOn="{StaticResource BaseItemSubTitleSelectedStyle}" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="#5ad0e8" />
+    </Style>
+    <SolidColorBrush x:Key="ItemSelectedBackgroundColor">#777F6D6F</SolidColorBrush>
+    <Style x:Key="ThumbStyle" BasedOn="{StaticResource BaseThumbStyle}" TargetType="{x:Type Thumb}"></Style>
+    <Style x:Key="ScrollBarStyle" BasedOn="{StaticResource BaseScrollBarStyle}" TargetType="{x:Type ScrollBar}"></Style>
+</ResourceDictionary>
