@@ -7,7 +7,7 @@
 
 ## :star2: Feature  
 1. Round corner  
-2. Translucent(No frosted glass effect)  
+2. Translucent
 3. Imitated monokai color scheme  
 
 ## 👇 How to use  
