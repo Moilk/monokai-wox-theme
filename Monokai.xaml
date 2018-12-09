@@ -5,7 +5,7 @@
         <ResourceDictionary Source="Base.xaml"></ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
 
-    <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
+    <system:Boolean x:Key="ThemeBlurEnabled">False</system:Boolean>
     
     <Style x:Key="QueryBoxStyle" BasedOn="{StaticResource BaseQueryBoxStyle}" TargetType="{x:Type TextBox}">
         <Setter Property="Background">
